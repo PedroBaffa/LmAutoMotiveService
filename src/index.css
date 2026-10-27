@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-blue: #0E018F;
+  --brand-royal: #2563EB;
+  --brand-red: #EA3335;
+  --brand-navy: #070A12;
+  --brand-dark: #0D1424;
+  --brand-surface: #141F36;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background: radial-gradient(circle at top, rgba(37, 99, 235, 0.16), transparent 30%), var(--brand-navy);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Custom scrollbar para estilo dark mecânico com as cores da foto */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--brand-navy);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1E2F52;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--brand-royal);
+  }
+}
+
+/* Ocultar barra de rolagem em carrosséis snap mobile mantendo a rolagem fluida */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Efeito de grade tecnológica em azul royal e vermelho do logo */
+.bg-grid {
+  background-size: 36px 36px;
+  background-image: 
+    linear-gradient(to right, rgba(14, 1, 143, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(14, 1, 143, 0.08) 1px, transparent 1px);
+}
+
+/* Gradiente principal alinhado ao logo */
+.text-gradient-primary {
+  background-image: linear-gradient(90deg, var(--brand-blue) 0%, var(--brand-royal) 52%, var(--brand-red) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Gradiente azul royal do logo */
+.text-gradient-electric {
+  background-image: linear-gradient(90deg, var(--brand-blue) 0%, var(--brand-royal) 50%, #7dd3fc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Gradiente vermelho racing do boné */
+.text-gradient-racing {
+  background-image: linear-gradient(90deg, #fca5a5 0%, var(--brand-red) 45%, #7f1d1d 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
