@@ -50,9 +50,12 @@ export const SERVICES = [
     features: ["Óleo 100% sintético e semissintético", "Filtro de óleo, ar, combustível e cabine", "Fluidos de freio e direção"],
     icon: "Droplets",
     badge: "Rápido & Prático"
-  },
+  }
+];
+
+export const TESTIMONIALS = [
   {
-    id: "motor-cambio",
+    name: "João Pereira",
     vehicle: "Jeep Renegade 1.8",
     rating: 5,
     text: "Oficina diferenciada na região do Imirim! Fizeram o diagnóstico exato que outras duas oficinas erraram. Me mandaram fotos e vídeos pelo WhatsApp de cada peça substituída. Preço justo e honestidade que hoje é raro encontrar.",
