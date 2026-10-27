@@ -1,75 +1,87 @@
-# Lm Automotive Service - Landing Page & Web Platform Base
+# LM Automotive Service
 
-Landing Page de alta conversão desenvolvida para a oficina mecânica **Lm Automotive Service**, localizada no Imirim, São Paulo - SP. Criada com foco em performance, experiência do usuário (UX/UI), design dark moderno e arquitetura componentizada em React + Tailwind CSS.
+Landing page moderna e de alto desempenho para a oficina mecânica LM Automotive Service, localizada no Imirim, São Paulo. O projeto foi desenvolvido com React + Vite + Tailwind CSS para destacar serviços, reputação, localização e conversão via WhatsApp.
 
----
+## Visão geral
 
-## 🛠️ Stack Tecnológica
+- Apresenta a marca e a proposta de valor da oficina
+- Foco em conversão para agendamento e atendimento via WhatsApp
+- Design dark premium com visual automotivo
+- Estrutura preparada para expansão futura com backend e painel administrativo
 
-- **Front-end:** React 18 + Vite
-- **Estilização:** Tailwind CSS (Dark Mode nativo, paleta automotiva personalizada)
-- **Ícones:** Lucide React
-- **Tipografia:** Google Fonts (`Inter` para leitura técnica e `Poppins` para títulos de impacto)
-- **Futura Integração Back-end:** Preparada para conexão com APIs em Node.js / PHP e banco de dados MariaDB/MySQL (módulos de OS e estoque).
+## Stack utilizada
 
----
+- React 18
+- Vite
+- Tailwind CSS
+- Lucide React
 
-## 🚀 Como Executar Localmente
+## Funcionalidades
+
+- Header com navegação e CTA de contato
+- Hero section com destaque de autoridade e conversão
+- Sessão de serviços com diferenciais da oficina
+- Depoimentos e prova social
+- Informações de endereço, horários e mapa
+- Rodapé institucional
+- Botão flutuante de WhatsApp para mobile e desktop
+
+## Como executar localmente
 
 ### Pré-requisitos
-- Node.js (v18+)
-- npm ou yarn/pnpm
 
-### 1. Instalar Dependências
+- Node.js 18+
+- npm
+
+### Instalação
+
 ```bash
 npm install
 ```
 
-### 2. Iniciar o Servidor de Desenvolvimento
+### Desenvolvimento
+
 ```bash
 npm run dev
 ```
-O Vite iniciará o servidor local em: `http://localhost:5173`
 
-### 3. Build de Produção
+A aplicação será aberta em http://localhost:5173
+
+### Build para produção
+
 ```bash
 npm run build
 ```
 
----
-
-## 📂 Arquitetura de Pastas
+## Estrutura do projeto
 
 ```text
 LmAutomotiveService/
-├── index.html                   # Entry point com fontes Inter/Poppins e metatags
-├── package.json                 # Dependências e scripts Vite
-├── tailwind.config.js           # Cores customizadas (industrial orange, electric blue, dark obsidian)
-├── postcss.config.js            # Pipeline PostCSS
-├── vite.config.js               # Configuração do bundler Vite
-└── src/
-    ├── data/
-    │   └── content.js           # Dados desacoplados (endereço, horários, serviços, depoimentos)
-    ├── components/
-    │   ├── Header.jsx           # Navegação sticky, logo, badge de status e menu mobile
-    │   ├── Hero.jsx             # Headline de confiança, selo 4.9 Google e CTAs WhatsApp
-    │   ├── Services.jsx         # Grid de especialidades (injeção, suspensão, freios, etc.)
-    │   ├── SocialProof.jsx      # Nota 4.9 Google Maps, depoimentos e pilares de honestidade
-    │   ├── LocationHours.jsx    # Endereço, horários de atendimento e Google Maps embed
-    │   ├── Footer.jsx           # Rodapé institucional, links rápidos e créditos
-    │   └── FloatingWhatsApp.jsx # Botão flutuante de alta conversão com pulso de notificação
-    ├── App.jsx                  # Composição principal da SPA
-    ├── index.css                # Diretivas Tailwind e estilizações globais dark
-    └── main.jsx                 # Montagem no DOM React
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── data/
+│   ├── App.jsx
+│   ├── index.css
+│   ├── main.jsx
+│   └── ...
+├── index.html
+├── package.json
+├── vite.config.js
+├── tailwind.config.js
+├── postcss.config.js
+├── .gitignore
+├── README.md
+└── package-lock.json
 ```
 
----
+## Contato
 
-## 🎨 Design System & Conversão
+- WhatsApp: (11) 95726-1647
+- Localização: Rua Rozo Lagoa, 389 - Imirim, São Paulo - SP
 
-- **Dark Mode Nativo:** Fundo `#080B10` profundo com cards `#0F141F` e bordas `#1E293B`, evitando fadiga visual e transmitindo sofisticação técnica.
-- **Acentos Industriais:** 
-  - **Laranja Industrial (`#F97316`):** Usado nos botões de ação e conversão do WhatsApp.
-  - **Azul Elétrico (`#0EA5E9`):** Usado para representar tecnologia diagnóstica computadorizada e precisão eletrônica.
-- **Conversão Focada:** Todos os serviços possuem links diretos para o WhatsApp (`11 95726-1647`) com mensagens pré-formatadas, além do botão flutuante persistente na navegação.
+## Observação
+
+Este projeto está em evolução e foi estruturado para servir como base de landing page comercial, com potencial de expansão para funcionalidades de agendamento, administração de serviços e integração com backend.
 
